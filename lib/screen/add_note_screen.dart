@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class AddNoteScreen extends StatefulWidget {
   const AddNoteScreen({super.key});
@@ -10,6 +11,18 @@ class AddNoteScreen extends StatefulWidget {
 class _AddNoteScreenState extends State<AddNoteScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Consumer(
+      builder: (context, value, child)
+       => Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.pink,
+          centerTitle: true,
+          title: const Text("Add Note", style: TextStyle(fontSize: 30)),
+        ),
+        body: Container(child: Column(children: [
+          
+        ],)),
+      ),
+    );
   }
 }

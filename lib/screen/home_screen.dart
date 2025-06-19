@@ -24,6 +24,13 @@ class _HomeScreenState extends State<HomeScreen> {
         child: Icon(Icons.add),
         backgroundColor: Colors.pinkAccent,
       ),
+      body: Container(
+        child: ListView.builder(
+          itemBuilder: (context, index) {
+            return ListTile();
+          },
+        ),
+      ),
     );
   }
 }

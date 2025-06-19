@@ -21,3 +21,17 @@ Note app using Flutter provider and named router
 ✅ Without it → Navigator.pushNamed has no mapping → you get an error.
 
  </p>
+
+ <pre>
+  For  using provider 
+  use
+  Consumer<name of your provider class>(builder:(context,model,child)=> Scaffold{
+    ...
+    ...
+    ...
+    ...
+  })
+
+
+  model can be of any name according to user
+ </pre>
