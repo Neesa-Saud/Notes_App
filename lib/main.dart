@@ -1,6 +1,6 @@
 import "package:flutter/material.dart";
+import "package:noteapp/routes.dart";
 import "package:noteapp/screen/home_screen.dart";
-import "package:provider/provider.dart";
 
 void main() {
   runApp(MyApp());
@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Note App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.pink),
-      routes: {'/': (context) => HomeScreen()},
+      initialRoute: OurRoutes.home,
+      routes: OurRoutes().getRoutes(),
     );
   }
 }

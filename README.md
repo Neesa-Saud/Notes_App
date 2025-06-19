@@ -15,6 +15,9 @@ Note app using Flutter provider and named router
 
  getRoutes is suitable for the conditional approach 
 
-
+<p>
+<h1>In main.dart</h1>
+✅ routes: OurRoutes.getRoutes() registers all named routes.
+✅ Without it → Navigator.pushNamed has no mapping → you get an error.
 
  </p>
